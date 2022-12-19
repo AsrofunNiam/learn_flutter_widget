@@ -7,19 +7,32 @@ class WidgetParsingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // var home;
-    return Scaffold( 
+    return Scaffold(
       appBar: AppBar(
         title: const Text(" Parsing data widget Card"),
       ),
-      body:  Container(
+      body: Container(
         child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            ModalParsingCard(iconCard: Icons.home, textCard: 'Test 1', colorCard: Color.fromARGB(255, 91, 130, 238)),
-            SizedBox(height: 30,),
-            ModalParsingCard(iconCard: Icons.book, textCard: 'Test 2', colorCard: Color.fromARGB(255, 88, 231, 207)),
-            SizedBox(height: 30,),
-            ModalParsingCard(iconCard: Icons.person, textCard: 'Test 3', colorCard: Color.fromARGB(255, 240, 124, 116)),
+            ModalParsingCard(
+                iconCard: Icons.home,
+                textCard: 'Test 1',
+                colorCard: Color.fromARGB(255, 91, 130, 238)),
+            SizedBox(
+              height: 30,
+            ),
+            ModalParsingCard(
+                iconCard: Icons.book,
+                textCard: 'Test 2',
+                colorCard: Color.fromARGB(255, 88, 231, 207)),
+            SizedBox(
+              height: 30,
+            ),
+            ModalParsingCard(
+                iconCard: Icons.person,
+                textCard: 'Test 3',
+                colorCard: Color.fromARGB(255, 240, 124, 116)),
           ],
         ),
       ),

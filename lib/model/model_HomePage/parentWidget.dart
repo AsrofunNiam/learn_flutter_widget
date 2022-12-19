@@ -22,6 +22,7 @@ class ParentWidget extends StatelessWidget {
         size: 30.0,
         color: colorParentMenu,
       ),
+      
       title: Text(titleParentMenu, style: TextStyle(
         fontSize: 23,
       ),),
