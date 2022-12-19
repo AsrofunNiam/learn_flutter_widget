@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/widget/widget_Card/widgetParsingCard.dart';
 
 class RouteCard extends StatelessWidget {
-  const RouteCard({Key? key}) : super(key: key);
+   const RouteCard({Key? key}) : super(key: key);
 
   get mainAxisAlignment => null;
 

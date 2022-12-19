@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parentAnimation.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parentAsync.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parentLayouts.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parentLists.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parentNavigation.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parentWidget.dart';
 import 'package:learn_flutter_widget/route/routeCard.dart';
+
+import 'model/model_HomePage/parentAppbar.dart';
 
 class HomePAge extends StatelessWidget {
   const HomePAge({Key? key}) : super(key: key);
@@ -16,7 +24,7 @@ class HomePAge extends StatelessWidget {
               child: Column(
         children: <Widget>[
           Container(
-            height: 100,
+            height: 70,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
@@ -27,26 +35,26 @@ class HomePAge extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const RouteCard()),
+                            builder: (context) => RouteCard()),
                       );
                     },
                     child: Container(
-                      height: 100,
-                      width: 100,
+                      height: 60,
+                      width: 60,
                       // ignore: prefer_const_constructors
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: Color.fromARGB(255, 185, 214, 238)),
                       child: const Center(
-                          child: Text("CARD", style: TextStyle(fontSize: 20))),
+                          child: Text("CARD", style: TextStyle(fontSize: 15))),
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 100,
-                    width: 100,
+                    height: 60,
+                    width: 60,
                     // ignore: prefer_const_constructors
                     decoration: BoxDecoration(
                         shape: BoxShape.circle, color: Colors.blue),
@@ -55,8 +63,8 @@ class HomePAge extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 100,
-                    width: 100,
+                    height: 60,
+                    width: 60,
                     // ignore: prefer_const_constructors
                     decoration: BoxDecoration(
                         shape: BoxShape.circle, color: Colors.blue),
@@ -65,8 +73,8 @@ class HomePAge extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    height: 100,
-                    width: 100,
+                    height: 60,
+                    width: 60,
                     // ignore: prefer_const_constructors
                     decoration: BoxDecoration(
                         shape: BoxShape.circle, color: Colors.blue),
@@ -76,8 +84,8 @@ class HomePAge extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
                     // child: Text("test 1"),
-                    height: 100,
-                    width: 100,
+                    height: 60,
+                    width: 60,
                     // ignore: prefer_const_constructors
                     decoration: BoxDecoration(
                         shape: BoxShape.circle, color: Colors.blue),
@@ -89,38 +97,69 @@ class HomePAge extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
+          // ChildMenu(),
           Container(
-            color: Colors.amber,
-            height: 400,
+            color: Color.fromARGB(255, 240, 240, 240),
+            height: 500,
             child: ListView(
               shrinkWrap: true,
               scrollDirection: Axis.vertical,
               children: <Widget>[
-                Container(
-                  width: 50,
-                  height: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  width: 50,
-                  height: 100,
-                  color: Color.fromARGB(255, 58, 206, 0),
-                ),
-                Container(
-                  width: 50,
-                  height: 100,
-                  color: Color.fromARGB(255, 243, 205, 33),
-                ),
-                Container(
-                  width: 50,
-                  height: 100,
-                  color: Color.fromARGB(255, 221, 0, 173),
-                ),
-                Container(
-                  width: 50,
-                  height: 100,
-                  color: Color.fromARGB(255, 243, 58, 33),
-                ),
+                ParentWidget(titleParentMenu: "Widgets", iconParentMenu: Icons.extension, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                ParentLayouts(titleParentMenu: "Layouts", iconParentMenu: Icons.personal_video_sharp, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                ParentList(titleParentMenu: "Lists", iconParentMenu: Icons.grading, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                ParentAppBar(titleParentMenu: "Appbar", iconParentMenu: Icons.edit_calendar, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                ParentNavigation(titleParentMenu: "Navigation", iconParentMenu: Icons.library_add_check, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                ParentAsync(titleParentMenu: "Async", iconParentMenu: Icons.timer, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                ParentAnimation(titleParentMenu: "Animation ( basic )", iconParentMenu: Icons.movie, colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                // ExpansionTile(
+                //   leading: const Icon(Icons.person),
+                //   title: Text(" Test"),
+                //   children: [
+                //     ListTile(
+                //       contentPadding: EdgeInsets.symmetric(horizontal: 50),
+                //       onTap: () {},
+                //       title: Text("Break"),
+                //     ),
+                //     ListTile(
+                //       contentPadding: EdgeInsets.symmetric(horizontal: 50),
+                //       onTap: () {},
+                //       title: Text("Break"),
+                //     ),
+                //     ListTile(
+                //       contentPadding: EdgeInsets.symmetric(horizontal: 50),
+                //       onTap: () {},
+                //       title: Text("Break"),
+                //     ),
+                //   ],
+                // )
+
+
+                // Container(
+                //   width: 50,
+                //   height: 100,
+                //   color: Color.fromARGB(255, 23, 24, 24),
+                // ),
+                // Container(
+                //   width: 50,
+                //   height: 100,
+                //   color: Color.fromARGB(255, 58, 206, 0),
+                // ),
+                // Container(
+                //   width: 50,
+                //   height: 100,
+                //   color: Color.fromARGB(255, 243, 205, 33),
+                // ),
+                // Container(
+                //   width: 50,
+                //   height: 100,
+                //   color: Color.fromARGB(255, 221, 0, 173),
+                // ),
+                // Container(
+                //   width: 50,
+                //   height: 100,
+                //   color: Color.fromARGB(255, 243, 58, 33),
+                // ),
               ],
             ),
           ),
