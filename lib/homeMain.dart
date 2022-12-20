@@ -82,11 +82,9 @@ class _HomeMainState extends State<HomeMain> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    // child: Text("test 1"),
                     height: 60,
                     width: 60,
-                    // ignore: prefer_const_constructors
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         shape: BoxShape.circle, color: Colors.blue),
                   ),
                 ),
@@ -106,31 +104,31 @@ class _HomeMainState extends State<HomeMain> {
                 ParentWidget(
                     titleParentMenu: "Widgets",
                     iconParentMenu: Icons.extension,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
                 ParentLayouts(
                     titleParentMenu: "Layouts",
                     iconParentMenu: Icons.personal_video_sharp,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
                 ParentList(
                     titleParentMenu: "Lists",
                     iconParentMenu: Icons.grading,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
                 ParentAppBar(
                     titleParentMenu: "Appbar",
                     iconParentMenu: Icons.edit_calendar,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
                 ParentNavigation(
                     titleParentMenu: "Navigation",
                     iconParentMenu: Icons.library_add_check,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
                 ParentAsync(
                     titleParentMenu: "Async",
                     iconParentMenu: Icons.timer,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
                 ParentAnimation(
                     titleParentMenu: "Animation ( basic )",
                     iconParentMenu: Icons.movie,
-                    colorParentMenu: Color.fromARGB(255, 95, 95, 95)),
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
               ],
             ),
           ),

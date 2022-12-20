@@ -4,6 +4,7 @@ class ChildMenu extends StatelessWidget {
   final String titleChildMenu;
   final IconData iconChildMenu;
   final Color colorChildMenu;
+
   dynamic Function() movePage;
 
   ChildMenu(
