@@ -1,11 +1,13 @@
-// ignore: file_names
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/view/widget_Card/widgetParsingCard.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:learn_flutter_widget/themes/style.dart';
+import 'package:learn_flutter_widget/themes/theme.dart';
 
-class RouteCard extends StatelessWidget {
-  const RouteCard({Key? key}) : super(key: key);
-
-  get mainAxisAlignment => null;
+class RouteWidgets extends StatelessWidget {
+  const RouteWidgets({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +22,7 @@ class RouteCard extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => WidgetParsingCard()),
+                    MaterialPageRoute(builder: (context) => RouteWidgets()),
                   );
                 },
                 child: Container(
@@ -35,17 +36,14 @@ class RouteCard extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 100,
-                width: 100,
-                // ignore: prefer_const_constructors
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.blue),
-              ),
-            ),
           ]),
+          StyleTrackDetail(
+              title: 'Test',
+              subtitle: Text("test"),
+              starGradient: gradientBlue1,
+              endGradient: gradientBlue2,
+              iconLeading: const Icon(Icons.person),
+              title2: "kos")
         ],
       ),
     );
