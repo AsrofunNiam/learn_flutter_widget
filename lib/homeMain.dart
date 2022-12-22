@@ -141,13 +141,16 @@ class _HomeMainState extends State<HomeMain> {
             child: GridView.count(
               scrollDirection: Axis.horizontal,
               crossAxisCount: 2,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              padding: const EdgeInsets.all(20),
               children: [
                 Container(
-                  color: Color.fromARGB(255, 187, 214, 31),
-                  height: 10,
-                  width: 10,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color.fromARGB(255, 187, 214, 31),
+                  ),
                 ),
-                // SizedBox(width: 5,),
                 Container(
                   color: Color.fromARGB(255, 199, 38, 38),
                   height: 10,
