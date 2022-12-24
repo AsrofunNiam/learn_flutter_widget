@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/childMenu.dart';
 import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/route/route_List/routeGridList.dart';
+import 'package:learn_flutter_widget/route/route_List/routeListTile.dart';
 
+// ignore: must_be_immutable
 class ParentList extends StatelessWidget {
   String titleParentMenu;
   IconData iconParentMenu;
@@ -33,7 +36,7 @@ class ParentList extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteListTile();
           },
         ),
         ChildMenu(
@@ -49,7 +52,7 @@ class ParentList extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteGridList();
           },
         ),
         ChildMenu(

@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import '../routeCard.dart';
 import '../routeCardTest2.dart';
 
-class RouteWidgets extends StatefulWidget {
-  const RouteWidgets({Key? key}) : super(key: key);
+class RouteListTile extends StatefulWidget {
+  const RouteListTile({Key? key}) : super(key: key);
 
   @override
-  State<RouteWidgets> createState() => _RouteWidgetsState();
+  State<RouteListTile> createState() => _RouteListTileState();
 }
 
-class _RouteWidgetsState extends State<RouteWidgets> {
+class _RouteListTileState extends State<RouteListTile> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    RouteCard(),
-    RouteCardTest2(),
-    RouteCardTest2(),
+    const RouteCard(),
+    const RouteCardTest2(),
+    const RouteCardTest2(),
   ];
   void _onItemTapped(int index) {
     _selecTextIndex = index;
@@ -37,7 +37,7 @@ class _RouteWidgetsState extends State<RouteWidgets> {
             ),
             borderRadius: BorderRadius.circular(10.0),
             gradient:
-                LinearGradient(colors: [Colors.indigo, Colors.blueAccent]),
+                const LinearGradient(colors: [Colors.indigo, Colors.blueAccent]),
             boxShadow: [
               BoxShadow(
                   color: Colors.grey, blurRadius: 2.0, offset: Offset(2.0, 2.0))
@@ -59,13 +59,13 @@ class _RouteWidgetsState extends State<RouteWidgets> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 187, 214, 31),
+                  color: const Color.fromARGB(255, 187, 214, 31),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Text 1',
+                      'Text Form 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -82,13 +82,13 @@ class _RouteWidgetsState extends State<RouteWidgets> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 187, 214, 31),
+                  color: const Color.fromARGB(255, 187, 214, 31),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Text 2',
+                      'Text Form 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -105,13 +105,13 @@ class _RouteWidgetsState extends State<RouteWidgets> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 187, 214, 31),
+                  color: const Color.fromARGB(255, 187, 214, 31),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Text 3',
+                      'Text Form 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),
