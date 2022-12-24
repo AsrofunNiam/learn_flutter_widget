@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 
-class StyleTrackDetail extends StatelessWidget {
+class StyleRoute extends StatelessWidget {
   final String title;
   final Widget subtitle;
   final Color starGradient;
@@ -10,7 +10,7 @@ class StyleTrackDetail extends StatelessWidget {
   final Widget iconLeading;
   final String title2;
 
-  const StyleTrackDetail(
+  const StyleRoute(
       {Key? key,
       required this.title,
       required this.subtitle,
