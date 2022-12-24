@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/childMenu.dart';
 import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/route/route_Widgets/routeCardInnkwell.dart';
+import 'package:learn_flutter_widget/route/route_Widgets/routeImages.dart';
 import 'package:learn_flutter_widget/route/route_Widgets/routeTextField.dart';
+import 'package:learn_flutter_widget/route/route_Widgets/routeTextFormField.dart';
 
 class ParentWidget extends StatelessWidget {
   String titleParentMenu;
@@ -34,7 +37,7 @@ class ParentWidget extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteWidgets();
+            return const RouteWidgets();
           },
         ),
         ChildMenu(
@@ -42,7 +45,7 @@ class ParentWidget extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteTextFormField();
           },
         ),
         ChildMenu(
@@ -50,7 +53,7 @@ class ParentWidget extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteImages();
           },
         ),
         ChildMenu(
@@ -58,7 +61,7 @@ class ParentWidget extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteTextFormField();
           },
         ),
         ChildMenu(
