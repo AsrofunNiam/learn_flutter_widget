@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/model/model_Card/modal_ParsingCard.dart';
+import 'package:learn_flutter_widget/model/model_Card/modal_parsing_card.dart';
 
 class WidgetParsingCard extends StatelessWidget {
   const WidgetParsingCard({Key? key}) : super(key: key);

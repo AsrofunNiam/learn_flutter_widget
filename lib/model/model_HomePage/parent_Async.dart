@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
 import 'package:learn_flutter_widget/route/route_Async/route_future_builder.dart';
+import 'package:learn_flutter_widget/themes/theme.dart';
 import '../../route/routeCard.dart';
 
 // ignore: must_be_immutable
@@ -34,7 +35,7 @@ class ParentAsync extends StatelessWidget {
         ChildMenu(
           titleChildMenu: "Future Builder",
           iconChildMenu: Icons.star,
-          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: gradientBlue1,
           movePage: () {
             return const RouteFutureBuilder();
           },

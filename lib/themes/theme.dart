@@ -12,8 +12,6 @@ const fontSize6 = TextStyle(fontSize: 13.4, color: Colors.black);
 //color font style
 final fontSizeColor1 = TextStyle(fontSize: 12, color: Colors.blue);
 
-//primary color
-final primaryColor = Color(0xFF01579B);
 
 const lineDivider = Divider(
   height: 0,
