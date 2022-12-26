@@ -1,8 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:learn_flutter_widget/themes/style.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 
@@ -22,7 +18,7 @@ class RouteWidgets extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => RouteWidgets()),
+                    MaterialPageRoute(builder: (context) => const RouteWidgets()),
                   );
                 },
                 child: Container(
@@ -37,9 +33,9 @@ class RouteWidgets extends StatelessWidget {
               ),
             ),
           ]),
-          StyleTrackDetail(
+          StyleRoute(
               title: 'Test',
-              subtitle: Text("test"),
+              subtitle: const Text("test"),
               starGradient: gradientBlue1,
               endGradient: gradientBlue2,
               iconLeading: const Icon(Icons.person),

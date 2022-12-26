@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
 import 'package:learn_flutter_widget/route/route_Async/route_future_builder.dart';
-import 'package:learn_flutter_widget/route/route_Card.dart';
+import '../../route/routeCard.dart';
 
 // ignore: must_be_immutable
 class ParentAsync extends StatelessWidget {
@@ -10,7 +10,8 @@ class ParentAsync extends StatelessWidget {
   Color colorParentMenu;
 
   ParentAsync(
-      {Key? key, required this.titleParentMenu,
+      {Key? key,
+      required this.titleParentMenu,
       required this.iconParentMenu,
       required this.colorParentMenu})
       : super(key: key);
@@ -33,7 +34,7 @@ class ParentAsync extends StatelessWidget {
         ChildMenu(
           titleChildMenu: "Future Builder",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
             return const RouteFutureBuilder();
           },
@@ -41,7 +42,7 @@ class ParentAsync extends StatelessWidget {
         ChildMenu(
           titleChildMenu: "Stream Builder( Time App ) ",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
             return const RouteCard();
           },
@@ -49,7 +50,7 @@ class ParentAsync extends StatelessWidget {
         ChildMenu(
           titleChildMenu: "Stream Controller",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
             return const RouteCard();
           },
@@ -57,7 +58,7 @@ class ParentAsync extends StatelessWidget {
         ChildMenu(
           titleChildMenu: "ValueListenableBuilder",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
             return const RouteCard();
           },

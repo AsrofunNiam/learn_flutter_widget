@@ -18,22 +18,21 @@ class ViewImage1 extends StatelessWidget {
               child: SizedBox(
                 height: 100,
                 width: 100,
-                child: Image.network('https://picsum.photos/250?image=9',
+                child: Image.network(
+                  'https://picsum.photos/250?image=9',
                 ),
                 // child: Image.file(
-                        // height: 200,
-                        // scale: 2.5,
-                        // // color: Color.fromARGB(255, 15, 147, 59),
-                        // opacity:
-                        //     const AlwaysStoppedAnimation<double>(0.5)
-                            // ),
+                // height: 200,
+                // scale: 2.5,
+                // // color: Color.fromARGB(255, 15, 147, 59),
+                // opacity:
+                //     const AlwaysStoppedAnimation<double>(0.5)
+                // ),
               ),
             ),
           ],
         ),
       ),
-
-    
     );
   }
 }

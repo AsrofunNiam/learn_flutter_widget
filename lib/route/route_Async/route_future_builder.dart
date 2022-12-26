@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 import 'package:learn_flutter_widget/view/mainView_Async/view_future_builder/view_future_builder1.dart';
-import '../route_CardTest2.dart';
 
 class RouteFutureBuilder extends StatefulWidget {
   const RouteFutureBuilder({Key? key}) : super(key: key);

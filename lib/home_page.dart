@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/homeMain.dart';
-import 'package:learn_flutter_widget/route/route_Card.dart';
-import 'package:learn_flutter_widget/route/route_CardTest.dart';
-import 'package:learn_flutter_widget/route/route_CardTest2.dart';
+import 'package:learn_flutter_widget/home_main.dart';
+import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/route/routeCardTest.dart';
+import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 
 class HomePAge extends StatefulWidget {
   const HomePAge({Key? key}) : super(key: key);

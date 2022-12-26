@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -30,7 +29,7 @@ class ChildMenu extends StatelessWidget {
         size: 20.0,
         color: colorChildMenu,
       ),
-      contentPadding: EdgeInsets.symmetric(horizontal: 50),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 50),
       onTap: () {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => movePage()));
