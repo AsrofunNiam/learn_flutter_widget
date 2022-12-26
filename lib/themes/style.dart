@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/themes/theme.dart';
 
 class StyleRoute extends StatelessWidget {
   final String title;
@@ -25,7 +24,7 @@ class StyleRoute extends StatelessWidget {
     return Container(
       height: 100,
       width: 100,
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.0),
         gradient: LinearGradient(

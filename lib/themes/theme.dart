@@ -25,9 +25,9 @@ final lineDivider = Divider(
 
 //main color
 final greyColor = Colors.grey[400];
-final redColor = Colors.red;
-final blueColor = Colors.blue;
-final greenColor = Colors.green;
+const redColor = Colors.red;
+const blueColor = Colors.blue;
+const greenColor = Colors.green;
 
 //gradient colors
 final gradientOrange = Color(0xFFffb74d);

@@ -3,14 +3,14 @@ import 'package:learn_flutter_widget/themes/theme.dart';
 import '../route_Card.dart';
 import '../route_CardTest2.dart';
 
-class RouteGridList extends StatefulWidget {
-  const RouteGridList({Key? key}) : super(key: key);
+class RouteTextFormField extends StatefulWidget {
+  const RouteTextFormField({Key? key}) : super(key: key);
 
   @override
-  State<RouteGridList> createState() => _RouteGridListState();
+  State<RouteTextFormField> createState() => _RouteTextFormFieldState();
 }
 
-class _RouteGridListState extends State<RouteGridList> {
+class _RouteTextFormFieldState extends State<RouteTextFormField> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const RouteCard(),
@@ -36,7 +36,6 @@ class _RouteGridListState extends State<RouteGridList> {
               color: Colors.black,
               width: 2.0,
             ),
-            
             borderRadius: BorderRadius.circular(10.0),
             gradient:
                 const LinearGradient(colors: [Colors.indigo, Colors.blueAccent]),
@@ -56,6 +55,7 @@ class _RouteGridListState extends State<RouteGridList> {
             GestureDetector(
               onTap: () {
                 _onItemTapped(0);
+                
               },
               child: Container(
                 decoration: BoxDecoration(
@@ -66,7 +66,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 1',
+                      'Text Form 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -88,7 +88,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 2',
+                      'Text Form 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -110,7 +110,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 3',
+                      'Text Form 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),

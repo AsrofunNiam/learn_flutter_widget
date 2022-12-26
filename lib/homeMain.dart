@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parentAnimation.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parentAsync.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parentLayouts.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parentLists.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parentNavigation.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parentWidget.dart';
-import 'package:learn_flutter_widget/route/routeCard.dart';
-import 'model/model_HomePage/parentAppbar.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_Animation.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_Async.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_Layouts.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_Lists.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_Navigation.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_Widget.dart';
+import 'package:learn_flutter_widget/route/route_Card.dart';
+import 'model/model_HomePage/parent_Appbar.dart';
 
 class HomeMain extends StatefulWidget {
   const HomeMain({Key? key}) : super(key: key);

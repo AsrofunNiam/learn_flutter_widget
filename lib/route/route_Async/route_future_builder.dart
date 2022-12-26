@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import '../route_Card.dart';
+import 'package:learn_flutter_widget/view/mainView_Async/view_future_builder/view_future_builder1.dart';
 import '../route_CardTest2.dart';
 
-class RouteGridList extends StatefulWidget {
-  const RouteGridList({Key? key}) : super(key: key);
+class RouteFutureBuilder extends StatefulWidget {
+  const RouteFutureBuilder({Key? key}) : super(key: key);
 
   @override
-  State<RouteGridList> createState() => _RouteGridListState();
+  State<RouteFutureBuilder> createState() => _RouteFutureBuilderState();
 }
 
-class _RouteGridListState extends State<RouteGridList> {
+class _RouteFutureBuilderState extends State<RouteFutureBuilder> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const RouteCard(),
+    const ViewFutureBuilder1(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -36,13 +36,14 @@ class _RouteGridListState extends State<RouteGridList> {
               color: Colors.black,
               width: 2.0,
             ),
-            
             borderRadius: BorderRadius.circular(10.0),
-            gradient:
-                const LinearGradient(colors: [Colors.indigo, Colors.blueAccent]),
+            gradient: const LinearGradient(
+                colors: [Colors.indigo, Colors.blueAccent]),
             boxShadow: [
-               BoxShadow(
-                  color: gradientGrey2, blurRadius: 2.0, offset: const Offset(2.0, 2.0))
+              BoxShadow(
+                  color: gradientGrey2,
+                  blurRadius: 2.0,
+                  offset: const Offset(2.0, 2.0))
             ]),
         height: 300,
         width: 300,
@@ -66,7 +67,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 1',
+                      'Future Builder 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -88,7 +89,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 2',
+                      'Future Builder 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -110,7 +111,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 3',
+                      'Future Builder 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),
