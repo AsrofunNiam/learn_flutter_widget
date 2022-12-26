@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_Animation.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_animation.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Async.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Layouts.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Lists.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Navigation.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Widget.dart';
-import 'package:learn_flutter_widget/route/route_Card.dart';
-import 'model/model_HomePage/parent_Appbar.dart';
+import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'model/model_HomePage/parent_appbar.dart';
 
 class HomeMain extends StatefulWidget {
   const HomeMain({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _HomeMainState extends State<HomeMain> {
           child: SingleChildScrollView(
               child: Column(
         children: <Widget>[
-          Container(
+          SizedBox(
             height: 70,
             child: ListView(
               scrollDirection: Axis.horizontal,
@@ -34,7 +34,8 @@ class _HomeMainState extends State<HomeMain> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => RouteCard()),
+                        MaterialPageRoute(
+                            builder: (context) => const RouteCard()),
                       );
                     },
                     child: Container(
@@ -43,7 +44,7 @@ class _HomeMainState extends State<HomeMain> {
                       // ignore: prefer_const_constructors
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: Color.fromARGB(255, 185, 214, 238)),
+                          color: const Color.fromARGB(255, 185, 214, 238)),
                       child: const Center(
                           child: Text("CARD", style: TextStyle(fontSize: 15))),
                     ),
@@ -95,7 +96,7 @@ class _HomeMainState extends State<HomeMain> {
             height: 10,
           ),
           Container(
-            color: Color.fromARGB(255, 240, 240, 240),
+            color: const Color.fromARGB(255, 240, 240, 240),
             height: 450,
             child: ListView(
               shrinkWrap: true,
@@ -137,7 +138,7 @@ class _HomeMainState extends State<HomeMain> {
           ),
           Container(
             height: 300,
-            color: Color.fromARGB(255, 253, 253, 253),
+            color: const Color.fromARGB(255, 253, 253, 253),
             child: GridView.count(
               scrollDirection: Axis.horizontal,
               crossAxisCount: 2,
@@ -148,41 +149,41 @@ class _HomeMainState extends State<HomeMain> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color.fromARGB(255, 187, 214, 31),
+                    color: const Color.fromARGB(255, 187, 214, 31),
                   ),
                 ),
                 Container(
-                  color: Color.fromARGB(255, 199, 38, 38),
+                  color: const Color.fromARGB(255, 199, 38, 38),
                   height: 10,
                   width: 10,
                 ),
                 Container(
-                  color: Color.fromARGB(255, 140, 218, 137),
+                  color: const Color.fromARGB(255, 140, 218, 137),
                   height: 10,
                   width: 10,
                 ),
                 Container(
-                  color: Color.fromARGB(255, 185, 27, 27),
+                  color: const Color.fromARGB(255, 185, 27, 27),
                   height: 10,
                   width: 10,
                 ),
                 Container(
-                  color: Color.fromARGB(255, 119, 163, 89),
+                  color: const Color.fromARGB(255, 119, 163, 89),
                   height: 100,
                   width: 10,
                 ),
                 Container(
-                  color: Color.fromARGB(255, 94, 82, 204),
+                  color: const Color.fromARGB(255, 94, 82, 204),
                   height: 20,
                   width: 20,
                 ),
                 Container(
-                  color: Color.fromARGB(255, 40, 40, 43),
+                  color: const Color.fromARGB(255, 40, 40, 43),
                   height: 20,
                   width: 20,
                 ),
                 Container(
-                  color: Color.fromARGB(255, 141, 141, 145),
+                  color: const Color.fromARGB(255, 141, 141, 145),
                   height: 20,
                   width: 20,
                 ),
@@ -194,7 +195,7 @@ class _HomeMainState extends State<HomeMain> {
           ),
           Container(
             height: 100,
-            color: Color.fromARGB(255, 110, 129, 241),
+            color: const Color.fromARGB(255, 110, 129, 241),
           ),
         ],
       ))),

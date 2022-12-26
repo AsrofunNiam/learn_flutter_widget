@@ -21,7 +21,7 @@ class RouteCardTest2 extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => WidgetParsingCard()),
+                        builder: (context) => const WidgetParsingCard()),
                   );
                 },
                 child: Container(
@@ -44,7 +44,7 @@ class RouteCardTest2 extends StatelessWidget {
                 // ignore: prefer_const_constructors
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color.fromARGB(255, 101, 226, 89)),
+                    color: const Color.fromARGB(255, 101, 226, 89)),
               ),
             ),
           ]),

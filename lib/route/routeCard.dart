@@ -1,4 +1,3 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/view/widget_Card/widgetParsingCard.dart';
 
@@ -21,7 +20,7 @@ class RouteCard extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => WidgetParsingCard()),
+                        builder: (context) => const WidgetParsingCard()),
                   );
                 },
                 child: Container(
@@ -41,8 +40,8 @@ class RouteCard extends StatelessWidget {
                 height: 100,
                 width: 100,
                 // ignore: prefer_const_constructors
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.blue),
+                decoration: const BoxDecoration(
+                    shape: BoxShape.circle, color: Colors.blue),
               ),
             ),
           ]),

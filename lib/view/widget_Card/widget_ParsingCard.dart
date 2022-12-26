@@ -11,7 +11,7 @@ class WidgetParsingCard extends StatelessWidget {
       appBar: AppBar(
         title: const Text(" Parsing data widget Card"),
       ),
-      body:  Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [
           ModalParsingCard(

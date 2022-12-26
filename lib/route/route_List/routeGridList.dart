@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import '../route_Card.dart';
-import '../route_CardTest2.dart';
 
 class RouteGridList extends StatefulWidget {
   const RouteGridList({Key? key}) : super(key: key);
@@ -36,13 +36,14 @@ class _RouteGridListState extends State<RouteGridList> {
               color: Colors.black,
               width: 2.0,
             ),
-            
             borderRadius: BorderRadius.circular(10.0),
-            gradient:
-                const LinearGradient(colors: [Colors.indigo, Colors.blueAccent]),
+            gradient: const LinearGradient(
+                colors: [Colors.indigo, Colors.blueAccent]),
             boxShadow: [
-               BoxShadow(
-                  color: gradientGrey2, blurRadius: 2.0, offset: const Offset(2.0, 2.0))
+              BoxShadow(
+                  color: gradientGrey2,
+                  blurRadius: 2.0,
+                  offset: const Offset(2.0, 2.0))
             ]),
         height: 300,
         width: 300,

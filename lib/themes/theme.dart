@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 //black font style
-final fontSize = TextStyle(color: Colors.black);
-final fontSize1 = TextStyle(fontSize: 12.0, color: Colors.black);
-final fontSize2 = TextStyle(fontSize: 14.0, color: Colors.black);
-final fontSize3 = TextStyle(fontSize: 16.0, color: Colors.black);
-final fontSIze4 = TextStyle(fontSize: 18.0, color: Colors.black);
-final fontSize5 = TextStyle(fontSize: 11.4, color: Colors.black);
-final fontSize6 = TextStyle(fontSize: 13.4, color: Colors.black);
+const fontSize = TextStyle(color: Colors.black);
+const fontSize1 = TextStyle(fontSize: 12.0, color: Colors.black);
+const fontSize2 = TextStyle(fontSize: 14.0, color: Colors.black);
+const fontSize3 = TextStyle(fontSize: 16.0, color: Colors.black);
+const fontSIze4 = TextStyle(fontSize: 18.0, color: Colors.black);
+const fontSize5 = TextStyle(fontSize: 11.4, color: Colors.black);
+const fontSize6 = TextStyle(fontSize: 13.4, color: Colors.black);
 
 //color font style
 final fontSizeColor1 = TextStyle(fontSize: 12, color: Colors.blue);
@@ -15,8 +15,7 @@ final fontSizeColor1 = TextStyle(fontSize: 12, color: Colors.blue);
 //primary color
 final primaryColor = Color(0xFF01579B);
 
-//divider line
-final lineDivider = Divider(
+const lineDivider = Divider(
   height: 0,
   thickness: 1,
   indent: 20,

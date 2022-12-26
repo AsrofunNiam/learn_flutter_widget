@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
-import 'package:learn_flutter_widget/route/route_Card.dart';
+import 'package:learn_flutter_widget/route/routeCard.dart';
 
 // ignore: must_be_immutable
 class ParentAppBar extends StatelessWidget {
@@ -9,7 +9,8 @@ class ParentAppBar extends StatelessWidget {
   Color colorParentMenu;
 
   ParentAppBar(
-      {Key? key, required this.titleParentMenu,
+      {Key? key,
+      required this.titleParentMenu,
       required this.iconParentMenu,
       required this.colorParentMenu})
       : super(key: key);
@@ -32,49 +33,49 @@ class ParentAppBar extends StatelessWidget {
         ChildMenu(
           titleChildMenu: "Basic AppBar",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
           titleChildMenu: "Button variant",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
           titleChildMenu: "Silver AppBar",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
           titleChildMenu: "Search",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
           titleChildMenu: "BackDrop",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
           titleChildMenu: "Convex AppBar",
           iconChildMenu: Icons.star,
-          colorChildMenu: Color.fromARGB(255, 94, 104, 247),
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
@@ -82,7 +83,7 @@ class ParentAppBar extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
       ],

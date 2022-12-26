@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
-import 'package:learn_flutter_widget/route/route_Card.dart';
+import '../../route/routeCard.dart';
 
 // ignore: must_be_immutable
 class ParentAnimation extends StatelessWidget {
@@ -25,7 +25,7 @@ class ParentAnimation extends StatelessWidget {
       ),
       title: Text(
         titleParentMenu,
-        style: TextStyle(
+        style: const TextStyle(
           fontSize: 23,
         ),
       ),
@@ -35,7 +35,7 @@ class ParentAnimation extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
@@ -43,7 +43,7 @@ class ParentAnimation extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
@@ -51,7 +51,7 @@ class ParentAnimation extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
@@ -59,7 +59,7 @@ class ParentAnimation extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
         ChildMenu(
@@ -67,7 +67,7 @@ class ParentAnimation extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return RouteCard();
+            return const RouteCard();
           },
         ),
       ],
