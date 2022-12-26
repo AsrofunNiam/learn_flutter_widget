@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import '../route_Card.dart';
+import '../../view/widget_Card/widget_ParsingCard.dart';
 import '../route_CardTest2.dart';
 
-class RouteGridList extends StatefulWidget {
-  const RouteGridList({Key? key}) : super(key: key);
+class RouteCardInnkwell extends StatefulWidget {
+  const RouteCardInnkwell({Key? key}) : super(key: key);
 
   @override
-  State<RouteGridList> createState() => _RouteGridListState();
+  State<RouteCardInnkwell> createState() => _RouteCardInnkwellState();
 }
 
-class _RouteGridListState extends State<RouteGridList> {
+class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const RouteCard(),
+    const WidgetParsingCard(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -66,7 +66,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 1',
+                      'Card 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -88,7 +88,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 2',
+                      'Card 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -110,7 +110,7 @@ class _RouteGridListState extends State<RouteGridList> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Grid List 3',
+                      'Card 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),
