@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/view/widget_Card/widgetParsingCard.dart';
+import 'package:learn_flutter_widget/view/widget_Card/widget_ParsingCard.dart';
 
 class RouteCard extends StatelessWidget {
   const RouteCard({Key? key}) : super(key: key);

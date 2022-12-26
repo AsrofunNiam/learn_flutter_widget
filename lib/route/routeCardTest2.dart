@@ -1,6 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/view/widget_Card/widgetParsingCard.dart';
+import 'package:learn_flutter_widget/view/widget_Card/widget_ParsingCard.dart';
 
 class RouteCardTest2 extends StatelessWidget {
   const RouteCardTest2({Key? key}) : super(key: key);
