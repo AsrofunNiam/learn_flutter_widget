@@ -29,7 +29,6 @@ class _ViewStatefullWidget1State extends State<ViewStatefullWidget1> {
                     setState(() {
                       _counter++;
                     });
-                    print(_counter);
                   },
                   child: const Icon(Icons.add),
                 ),
