@@ -9,10 +9,6 @@ const fontSIze4 = TextStyle(fontSize: 18.0, color: Colors.black);
 const fontSize5 = TextStyle(fontSize: 11.4, color: Colors.black);
 const fontSize6 = TextStyle(fontSize: 13.4, color: Colors.black);
 
-//color font style
-final fontSizeColor1 = TextStyle(fontSize: 12, color: Colors.blue);
-
-
 const lineDivider = Divider(
   height: 0,
   thickness: 1,
@@ -27,7 +23,8 @@ const blueColor = Colors.blue;
 const greenColor = Colors.green;
 
 //gradient colors
-final gradientOrange = Color(0xFFffb74d);
+late final  gradientOrange ;
+// gradientOrange=Color(0xFFffb74d);
 final gradientOrange1 = Color(0xFFFF7A00);
 final gradientOrange2 = Color(0xFFCE5A06);
 final gradientRed1 = Color(0xFFEC1B1B);

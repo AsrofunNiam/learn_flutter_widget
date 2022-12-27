@@ -2,23 +2,23 @@ import 'package:flutter/material.dart';
 
 class data {
   int id;
-  int fact_id;
+  int factId;
   String fact;
   String image;
   String reference;
 
-  data(this.id, this.fact_id, this.fact, this.image, this.reference);
+  data(this.id, this.factId, this.fact, this.image, this.reference);
 
   data.fromJson(Map<String, dynamic> json)
       : id = json['id'],
-        fact_id = json['fact_id'],
+        factId = json['fact_id'],
         fact = json['fact'],
         image = json['image'],
         reference = json['reference'];
 
   Map<String, dynamic> toJson() => {
         'id': id,
-        'fact_id': fact_id,
+        'fact_id': factId,
         'fact': fact,
         'image': image,
         'reference': reference,
@@ -49,7 +49,7 @@ class _ViewFutureBuilder1State extends State<ViewFutureBuilder1> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
     // return Scaffold(
     //   body: Center(
     //     child: Container(
