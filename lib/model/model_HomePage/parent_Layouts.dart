@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
 import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/route/route_layouts/route_container.dart';
 
 // ignore: must_be_immutable
 class ParentLayouts extends StatelessWidget {
@@ -35,7 +36,7 @@ class ParentLayouts extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteCard();
+            return const RouteContainer();
           },
         ),
         ChildMenu(

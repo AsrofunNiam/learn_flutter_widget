@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/view/widget_Card/widget_ParsingCard.dart';
+import 'package:learn_flutter_widget/view/mainView_Widgets/view_card/view_card_one.dart';
 
 class RouteCard extends StatelessWidget {
   const RouteCard({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class RouteCard extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const WidgetParsingCard()),
+                        builder: (context) => const ViewCard1()),
                   );
                 },
                 child: Container(

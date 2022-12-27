@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_widget/route/routeCard.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_card/view_card_one.dart';
 
-class RouteCardInnkwell extends StatefulWidget {
-  const RouteCardInnkwell({Key? key}) : super(key: key);
+class RouteHero extends StatefulWidget {
+  const RouteHero({Key? key}) : super(key: key);
 
   @override
-  State<RouteCardInnkwell> createState() => _RouteCardInnkwellState();
+  State<RouteHero> createState() => _RouteHeroState();
 }
 
-class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
+class _RouteHeroState extends State<RouteHero> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewCard1(),
+    const RouteCard(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -67,7 +67,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 1',
+                      'Hero 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -89,7 +89,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 2',
+                      'Hero 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -111,7 +111,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 3',
+                      'Hero 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_images/view_Images.dart';
+import 'package:learn_flutter_widget/view/mainView_Widgets/view_images/view_images1.dart';
 
 class RouteImages extends StatefulWidget {
   const RouteImages({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class RouteImages extends StatefulWidget {
 class _RouteImagesState extends State<RouteImages> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewImage1(),
+    const ViewImages1(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
