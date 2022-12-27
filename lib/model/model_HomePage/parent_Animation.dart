@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
+import 'package:learn_flutter_widget/route/route_animation_basic/route_hero.dart';
 import '../../route/routeCard.dart';
 
 // ignore: must_be_immutable
@@ -35,7 +36,7 @@ class ParentAnimation extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return const RouteCard();
+            return const RouteHero();
           },
         ),
         ChildMenu(

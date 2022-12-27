@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_card/view_card_one.dart';
+import 'package:learn_flutter_widget/view/mainView_Widgets/view_images/view_images1.dart';
 
-class RouteCardInnkwell extends StatefulWidget {
-  const RouteCardInnkwell({Key? key}) : super(key: key);
+class RouteContainer extends StatefulWidget {
+  const RouteContainer({Key? key}) : super(key: key);
 
   @override
-  State<RouteCardInnkwell> createState() => _RouteCardInnkwellState();
+  State<RouteContainer> createState() => _RouteContainerState();
 }
 
-class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
+class _RouteContainerState extends State<RouteContainer> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewCard1(),
+    const ViewImages1(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -67,7 +67,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 1',
+                      'Images 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -89,7 +89,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 2',
+                      'Images 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -111,7 +111,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 3',
+                      'Images 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),
