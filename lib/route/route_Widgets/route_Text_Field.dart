@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/route/routeCard.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
+import 'package:learn_flutter_widget/view/mainView_Widgets/view_textfield/view_textfield_one.dart';
 
 class RouteWidgets extends StatefulWidget {
   const RouteWidgets({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class RouteWidgets extends StatefulWidget {
 class _RouteWidgetsState extends State<RouteWidgets> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const RouteCard(),
+     ViewTextField1(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -27,6 +27,7 @@ class _RouteWidgetsState extends State<RouteWidgets> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
         body: Center(
       child: Container(
@@ -67,7 +68,7 @@ class _RouteWidgetsState extends State<RouteWidgets> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Text 1',
+                      'TextField 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -89,7 +90,7 @@ class _RouteWidgetsState extends State<RouteWidgets> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Text 2',
+                      'TextField 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -111,7 +112,7 @@ class _RouteWidgetsState extends State<RouteWidgets> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Text 3',
+                      'TextField 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_card/view_card_one.dart';
+import 'package:learn_flutter_widget/view/mainView_Widgets/view_card_innkwell/view_innnkwell_one.dart';
 
 class RouteCardInnkwell extends StatefulWidget {
   const RouteCardInnkwell({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class RouteCardInnkwell extends StatefulWidget {
 class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewCard1(),
+    const ViewInnkwellOne(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -67,7 +67,7 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Card 1',
+                      'inkwell 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
