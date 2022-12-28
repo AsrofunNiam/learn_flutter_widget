@@ -65,7 +65,7 @@ class ParentWidget extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteTextFormField();
+            return const RouteCardInnkwell();
           },
         ),
         ChildMenu(
