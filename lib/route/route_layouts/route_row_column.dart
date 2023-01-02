@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_images/view_images1.dart';
+import 'package:learn_flutter_widget/view/main_view_layouts/view_row_column/view_row_one.dart';
 
-class RouteContainer extends StatefulWidget {
-  const RouteContainer({Key? key}) : super(key: key);
+class RouteRowColumn extends StatefulWidget {
+  const RouteRowColumn({Key? key}) : super(key: key);
 
   @override
-  State<RouteContainer> createState() => _RouteContainerState();
+  State<RouteRowColumn> createState() => _RouteRowColumnState();
 }
 
-class _RouteContainerState extends State<RouteContainer> {
+class _RouteRowColumnState extends State<RouteRowColumn> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewImages1(),
+    const ViewRowOne(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -67,7 +67,7 @@ class _RouteContainerState extends State<RouteContainer> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Container 1',
+                      'Row 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -89,7 +89,7 @@ class _RouteContainerState extends State<RouteContainer> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Container 2',
+                      'Column 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),

@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
-import 'package:learn_flutter_widget/route/routeCard.dart';
 import 'package:learn_flutter_widget/route/route_layouts/route_container.dart';
+import 'package:learn_flutter_widget/route/route_layouts/route_expanded_sizebox.dart';
+import 'package:learn_flutter_widget/route/route_layouts/route_fractionallySizebox.dart';
+import 'package:learn_flutter_widget/route/route_layouts/route_row_column.dart';
+import 'package:learn_flutter_widget/route/route_layouts/route_stack.dart';
+import 'package:learn_flutter_widget/route/route_layouts/route_wrap.dart';
+
+import '../../route/route_layouts/route_flexsible.dart';
 
 // ignore: must_be_immutable
 class ParentLayouts extends StatelessWidget {
@@ -44,7 +50,7 @@ class ParentLayouts extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteCard();
+            return const RouteRowColumn();
           },
         ),
         ChildMenu(
@@ -52,7 +58,7 @@ class ParentLayouts extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteCard();
+            return const RouteWrap();
           },
         ),
         ChildMenu(
@@ -60,7 +66,7 @@ class ParentLayouts extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteCard();
+            return const RouteFractionallySizebox();
           },
         ),
         ChildMenu(
@@ -68,7 +74,7 @@ class ParentLayouts extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteCard();
+            return const RouteExpanded();
           },
         ),
         ChildMenu(
@@ -76,7 +82,15 @@ class ParentLayouts extends StatelessWidget {
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteCard();
+            return const RouteStack();
+          },
+        ),
+        ChildMenu(
+          titleChildMenu: "FlexSible",
+          iconChildMenu: Icons.star,
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
+          movePage: () {
+            return const RouteFlexible();
           },
         ),
       ],
