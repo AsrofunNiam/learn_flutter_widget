@@ -3,14 +3,14 @@ import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 import 'package:learn_flutter_widget/view/mainView_Widgets/view_images/view_images1.dart';
 
-class RouteContainer extends StatefulWidget {
-  const RouteContainer({Key? key}) : super(key: key);
+class RouteExpanded extends StatefulWidget {
+  const RouteExpanded({Key? key}) : super(key: key);
 
   @override
-  State<RouteContainer> createState() => _RouteContainerState();
+  State<RouteExpanded> createState() => _RouteExpandedState();
 }
 
-class _RouteContainerState extends State<RouteContainer> {
+class _RouteExpandedState extends State<RouteExpanded> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const ViewImages1(),
@@ -67,7 +67,7 @@ class _RouteContainerState extends State<RouteContainer> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Container 1',
+                      'Expanded 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -89,7 +89,7 @@ class _RouteContainerState extends State<RouteContainer> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Container 2',
+                      'SizeBox 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),

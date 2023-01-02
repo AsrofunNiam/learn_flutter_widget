@@ -84,14 +84,6 @@ class ParentWidget extends StatelessWidget {
             return const RouteStatefullWidget();
           },
         ),
-        ChildMenu(
-          titleChildMenu: "Card",
-          iconChildMenu: Icons.star,
-          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
-          movePage: () {
-            return const RouteCardInnkwell();
-          },
-        ),
       ],
     );
   }
