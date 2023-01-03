@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/route/routeCard.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
+import 'package:learn_flutter_widget/view/main_view_list/view_grid_list/view_gridlist_one.dart';
 
 class RouteGridList extends StatefulWidget {
   const RouteGridList({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class RouteGridList extends StatefulWidget {
 class _RouteGridListState extends State<RouteGridList> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const RouteCard(),
+    const ViewGridlistOne(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];

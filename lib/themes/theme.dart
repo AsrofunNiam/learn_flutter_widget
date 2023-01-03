@@ -22,8 +22,6 @@ const redColor = Colors.red;
 const blueColor = Colors.blue;
 const greenColor = Colors.green;
 
-//gradient colors
-late final  gradientOrange ;
 // gradientOrange=Color(0xFFffb74d);
 final gradientOrange1 = Color(0xFFFF7A00);
 final gradientOrange2 = Color(0xFFCE5A06);

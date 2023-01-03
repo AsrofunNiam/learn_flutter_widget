@@ -11,14 +11,7 @@ class ViewInnkwellOne extends StatelessWidget {
           child: Column(
         children: <Widget>[
           GestureDetector(
-            onTap: (){
-
-            },
-            child: Container(
-              height: 30,
-              width: 30,
-            ),
-
+            onTap: () {},
           ),
           const SizedBox(
             height: 30,
