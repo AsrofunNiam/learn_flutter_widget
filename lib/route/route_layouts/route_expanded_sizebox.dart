@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_images/view_images1.dart';
+import 'package:learn_flutter_widget/view/main_view_layouts/view_expanded_sizebox/view_expanded_one.dart';
+import 'package:learn_flutter_widget/view/main_view_layouts/view_expanded_sizebox/view_sizebo_one.dart';
 
 class RouteExpanded extends StatefulWidget {
   const RouteExpanded({Key? key}) : super(key: key);
@@ -13,8 +14,8 @@ class RouteExpanded extends StatefulWidget {
 class _RouteExpandedState extends State<RouteExpanded> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewImages1(),
-    const RouteCardTest2(),
+    const ViewExpandedOne(),
+    const ViewSizeboxOne(),
     const RouteCardTest2(),
   ];
   void _onItemTapped(int index) {

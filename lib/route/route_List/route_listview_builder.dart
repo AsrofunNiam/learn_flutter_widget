@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_list/view_listtile/view_listile_one.dart';
+import 'package:learn_flutter_widget/view/main_view_list/view_listview_builder/view_listtile_builder_one.dart';
 
-class RouteListTile extends StatefulWidget {
-  const RouteListTile({Key? key}) : super(key: key);
+class RouteListViewBUilder extends StatefulWidget {
+  const RouteListViewBUilder({Key? key}) : super(key: key);
 
   @override
-  State<RouteListTile> createState() => _RouteListTileState();
+  State<RouteListViewBUilder> createState() => _RouteListViewBUilderState();
 }
 
-class _RouteListTileState extends State<RouteListTile> {
+class _RouteListViewBUilderState extends State<RouteListViewBUilder> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewListtileOne(),
+    const ViewListtileBuilderOne(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -67,7 +67,7 @@ class _RouteListTileState extends State<RouteListTile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'ListTile 1',
+                      'L_V Builder 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -89,7 +89,7 @@ class _RouteListTileState extends State<RouteListTile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'ListTile 2',
+                      'L_V Builder 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -111,7 +111,7 @@ class _RouteListTileState extends State<RouteListTile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'ListTile 3',
+                      'L_V Builder 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),

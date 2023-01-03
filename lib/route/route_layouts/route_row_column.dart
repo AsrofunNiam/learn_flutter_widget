@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
+import 'package:learn_flutter_widget/view/main_view_layouts/view_row_column/view_column_one.dart';
 import 'package:learn_flutter_widget/view/main_view_layouts/view_row_column/view_row_one.dart';
 
 class RouteRowColumn extends StatefulWidget {
@@ -14,7 +15,7 @@ class _RouteRowColumnState extends State<RouteRowColumn> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const ViewRowOne(),
-    const RouteCardTest2(),
+    const ViewColumnOne(),
     const RouteCardTest2(),
   ];
   void _onItemTapped(int index) {
