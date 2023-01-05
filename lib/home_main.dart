@@ -5,6 +5,7 @@ import 'package:learn_flutter_widget/model/model_HomePage/parent_Layouts.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Lists.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Navigation.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_Widget.dart';
+import 'package:learn_flutter_widget/model/model_HomePage/parent_working.dart';
 import 'package:learn_flutter_widget/route/routeCard.dart';
 import 'model/model_HomePage/parent_appbar.dart';
 
@@ -129,6 +130,10 @@ class _HomeMainState extends State<HomeMain> {
                 ParentAnimation(
                     titleParentMenu: "Animation ( basic )",
                     iconParentMenu: Icons.movie,
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
+                ParentWorking(
+                    titleParentMenu: "Working",
+                    iconParentMenu: Icons.work,
                     colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
               ],
             ),
