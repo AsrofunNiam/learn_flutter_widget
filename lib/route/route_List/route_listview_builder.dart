@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 import 'package:learn_flutter_widget/view/main_view_list/view_listview_builder/view_listtile_builder_one.dart';
+import 'package:learn_flutter_widget/view/main_view_list/view_listview_builder/view_listview_builder_one.dart';
 
 class RouteListViewBUilder extends StatefulWidget {
   const RouteListViewBUilder({Key? key}) : super(key: key);
@@ -13,8 +14,8 @@ class RouteListViewBUilder extends StatefulWidget {
 class _RouteListViewBUilderState extends State<RouteListViewBUilder> {
   late int _selecTextIndex = 0;
   List viewWidget = [
+    const ViewListViewBuilderOne(),
     const ViewListtileBuilderOne(),
-    const RouteCardTest2(),
     const RouteCardTest2(),
   ];
   void _onItemTapped(int index) {

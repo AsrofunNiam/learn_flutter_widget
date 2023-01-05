@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_working/view_htttp/view_httpget_one.dart';
+import 'package:learn_flutter_widget/view/main_view_working/view_web_socket/view_ws_one.dart';
 
-class RouteHttp extends StatefulWidget {
-  const RouteHttp({Key? key}) : super(key: key);
+class RouteWebSocket extends StatefulWidget {
+  const RouteWebSocket({Key? key}) : super(key: key);
 
   @override
-  State<RouteHttp> createState() => _RouteHttpState();
+  State<RouteWebSocket> createState() => _RouteWebSocketState();
 }
 
-class _RouteHttpState extends State<RouteHttp> {
+class _RouteWebSocketState extends State<RouteWebSocket> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewHttp(),
+    const ViewWebSocketOne(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -29,7 +29,7 @@ class _RouteHttpState extends State<RouteHttp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Center(child: Text("Route Working ")),
+          title: const Center(child: Text("Web Socket")),
         ),
         body: Center(
           child: Container(
@@ -70,7 +70,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP GET 1',
+                          'WS wss 1',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -92,7 +92,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP POST 2',
+                          'WS https 1',
                           style: TextStyle(
                             fontSize: 20,
                           ),
