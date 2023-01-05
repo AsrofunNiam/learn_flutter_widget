@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
 import 'package:learn_flutter_widget/route/route_working/route_http_metode.dart';
+import 'package:learn_flutter_widget/route/route_working/route_websocket.dart';
 import '../../route/routeCard.dart';
 
 // ignore: must_be_immutable
@@ -40,11 +41,11 @@ class ParentWorking extends StatelessWidget {
           },
         ),
         ChildMenu(
-          titleChildMenu: "BLOC",
+          titleChildMenu: "Web Socket",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return const RouteCard();
+            return const RouteWebSocket();
           },
         ),
         ChildMenu(

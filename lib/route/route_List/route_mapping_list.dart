@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_working/view_htttp/view_httpget_one.dart';
+import 'package:learn_flutter_widget/view/main_view_list/view_mapping_list/view_mappinglist_one.dart';
 
-class RouteHttp extends StatefulWidget {
-  const RouteHttp({Key? key}) : super(key: key);
+class RouteMappingList extends StatefulWidget {
+  const RouteMappingList({Key? key}) : super(key: key);
 
   @override
-  State<RouteHttp> createState() => _RouteHttpState();
+  State<RouteMappingList> createState() => _RouteMappingListState();
 }
 
-class _RouteHttpState extends State<RouteHttp> {
+class _RouteMappingListState extends State<RouteMappingList> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewHttp(),
+     ViewMappingList(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -29,7 +29,7 @@ class _RouteHttpState extends State<RouteHttp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Center(child: Text("Route Working ")),
+          title: const Center(child: Text("Mapping List")),
         ),
         body: Center(
           child: Container(
@@ -70,7 +70,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP GET 1',
+                          'Mapping 1',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -92,7 +92,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP POST 2',
+                          'Mapping 2',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -114,7 +114,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP PUT 3',
+                          'Mapping 3',
                           style: TextStyle(
                             fontSize: 20,
                           ),
