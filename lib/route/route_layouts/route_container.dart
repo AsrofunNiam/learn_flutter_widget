@@ -28,101 +28,104 @@ class _RouteContainerState extends State<RouteContainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-      child: Container(
-        decoration: BoxDecoration(
-            color: Colors.blueAccent,
-            border: Border.all(
-              color: Colors.black,
-              width: 2.0,
-            ),
-            borderRadius: BorderRadius.circular(10.0),
-            gradient: const LinearGradient(
-                colors: [Colors.indigo, Colors.blueAccent]),
-            boxShadow: [
-              BoxShadow(
-                  color: gradientGrey2,
-                  blurRadius: 2.0,
-                  offset: const Offset(2.0, 2.0))
-            ]),
-        height: 300,
-        width: 300,
-        child: GridView.count(
-          scrollDirection: Axis.vertical,
-          crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
-          padding: const EdgeInsets.all(20),
-          children: <GestureDetector>[
-            GestureDetector(
-              onTap: () {
-                _onItemTapped(0);
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color.fromARGB(255, 187, 214, 31),
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const <Widget>[
-                    Text(
-                      'Container 1',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                _onItemTapped(1);
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color.fromARGB(255, 187, 214, 31),
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const <Widget>[
-                    Text(
-                      'Container 2',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                _onItemTapped(2);
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: const Color.fromARGB(255, 187, 214, 31),
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const <Widget>[
-                    Text(
-                      'Container 3',
-                      style: TextStyle(
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
+        appBar: AppBar(
+          title: const Center(child: Text("Route Container")),
         ),
-      ),
-    ));
+        body: Center(
+          child: Container(
+            decoration: BoxDecoration(
+                color: Colors.blueAccent,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 2.0,
+                ),
+                borderRadius: BorderRadius.circular(10.0),
+                gradient: const LinearGradient(
+                    colors: [Colors.indigo, Colors.blueAccent]),
+                boxShadow: [
+                  BoxShadow(
+                      color: gradientGrey2,
+                      blurRadius: 2.0,
+                      offset: const Offset(2.0, 2.0))
+                ]),
+            height: 300,
+            width: 300,
+            child: GridView.count(
+              scrollDirection: Axis.vertical,
+              crossAxisCount: 2,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              padding: const EdgeInsets.all(20),
+              children: <GestureDetector>[
+                GestureDetector(
+                  onTap: () {
+                    _onItemTapped(0);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color.fromARGB(255, 187, 214, 31),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const <Widget>[
+                        Text(
+                          'Container 1',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    _onItemTapped(1);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color.fromARGB(255, 187, 214, 31),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const <Widget>[
+                        Text(
+                          'Container 2',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    _onItemTapped(2);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color.fromARGB(255, 187, 214, 31),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const <Widget>[
+                        Text(
+                          'Container 3',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ));
   }
 }

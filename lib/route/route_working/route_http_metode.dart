@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_list/view_slidable_listtile/view_slidable_one.dart';
+import 'package:learn_flutter_widget/view/main_view_working/view_htttp/view_httpget_one.dart';
 
-class RouteSlidableListTile extends StatefulWidget {
-  const RouteSlidableListTile({Key? key}) : super(key: key);
+class RouteHttp extends StatefulWidget {
+  const RouteHttp({Key? key}) : super(key: key);
 
   @override
-  State<RouteSlidableListTile> createState() => _RouteSlidableListTileState();
+  State<RouteHttp> createState() => _RouteHttpState();
 }
 
-class _RouteSlidableListTileState extends State<RouteSlidableListTile> {
+class _RouteHttpState extends State<RouteHttp> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewSlidableOne(),
+    const ViewHttp(),
     const RouteCardTest2(),
     const RouteCardTest2(),
   ];
@@ -28,8 +28,8 @@ class _RouteSlidableListTileState extends State<RouteSlidableListTile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
-          title: const Center(child: Text("Route Slidedable")),
+      appBar: AppBar(
+          title: const Center(child: Text("Route Working ")),
         ),
         body: Center(
       child: Container(
@@ -70,7 +70,7 @@ class _RouteSlidableListTileState extends State<RouteSlidableListTile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Slidable 1',
+                      'HTTP GET 1',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -92,7 +92,7 @@ class _RouteSlidableListTileState extends State<RouteSlidableListTile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Slidable 2',
+                      'HTTP POST 2',
                       style: TextStyle(
                         fontSize: 20,
                       ),
@@ -114,7 +114,7 @@ class _RouteSlidableListTileState extends State<RouteSlidableListTile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const <Widget>[
                     Text(
-                      'Slidable 3',
+                      'HTTP PUT 3',
                       style: TextStyle(
                         fontSize: 20,
                       ),
