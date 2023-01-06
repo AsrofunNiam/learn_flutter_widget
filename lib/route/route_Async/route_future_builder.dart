@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 import 'package:learn_flutter_widget/view/mainView_Async/view_future_builder/view_future_builder1.dart';
+import 'package:learn_flutter_widget/view/mainView_Async/view_future_builder/view_futurebuilder_two.dart';
 
 class RouteFutureBuilder extends StatefulWidget {
   const RouteFutureBuilder({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _RouteFutureBuilderState extends State<RouteFutureBuilder> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const ViewFutureBuilder1(),
-    const RouteCardTest2(),
+   ViewFutureBuilderTwo(),
     const RouteCardTest2(),
   ];
   void _onItemTapped(int index) {
@@ -66,13 +67,25 @@ class _RouteFutureBuilderState extends State<RouteFutureBuilder> {
                       borderRadius: BorderRadius.circular(20),
                       color: const Color.fromARGB(255, 187, 214, 31),
                     ),
+                    // child: const Center(
+                    //   child: Text(
+
+                    //     'Future Builder 1',
+                    //     style: TextStyle(
+                    //       fontSize: 20,
+                    //     ),
+                    //   ),
+                    // ),
+
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
-                        Text(
-                          'Future Builder 1',
-                          style: TextStyle(
-                            fontSize: 20,
+                        Center(
+                          child: Text(
+                            'Future B 1',
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
                           ),
                         ),
                       ],
@@ -92,7 +105,7 @@ class _RouteFutureBuilderState extends State<RouteFutureBuilder> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'Future Builder 2',
+                          'Future B 2 v',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -114,7 +127,7 @@ class _RouteFutureBuilderState extends State<RouteFutureBuilder> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'Future Builder 3',
+                          'Future B 3',
                           style: TextStyle(
                             fontSize: 20,
                           ),
