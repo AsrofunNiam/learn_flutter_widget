@@ -11,10 +11,10 @@ class ViewFutureBuilderTwo extends StatelessWidget {
       var hasilGet1 =
           await http.get(Uri.parse('https://reqres.in/api/users/2'));
       if (hasilGet1.statusCode == 200) {
-        var dataOne =
-            json.decode(hasilGet1.body)['data'] as Map<String, dynamic>;
-        print(dataOne);
-        return dataOne;
+        var data =json.decode(hasilGet1.body)['data'] as Map<String, dynamic>;
+        print(data['first_name']);
+        print("ini : ${json.decode(hasilGet1.body)['data']['id']}");
+        return data;
       } else {
         print("Error di ${hasilGet1.statusCode}");
         throw (hasilGet1.statusCode);
@@ -22,20 +22,15 @@ class ViewFutureBuilderTwo extends StatelessWidget {
     } catch (err) {
       rethrow;
     }
-
-    // print(json.decode(hasilGet1.body)['data']['id']);
   }
 
   getData2() async {
-    String lastNamed;
-    String firstNAmed;
-    final data;
     // http.get(Uri.parse('http://staging.foxlogger.com:9042/mobile/user-data/83705'));
     var hasilGet2 = await http.get(
         Uri.parse('http://staging.foxlogger.com:9042/mobile/user-data/83705'));
     // print(hasilGet.body);
     // print(json.decode(hasilGet.body)['g_user_id']);
-    print(json.decode(hasilGet2.body)['ptv_ctow']);
+    // print(json.decode(hasilGet2.body)['ptv_ctow']);
   }
 
   @override
@@ -57,7 +52,7 @@ class ViewFutureBuilderTwo extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else {
-            print(snapshot.data);
+            print("test : ${snapshot.data!}");
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -70,10 +65,10 @@ class ViewFutureBuilderTwo extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "name : ${snapshot.data!.toString()}",
-                          style: TextStyle(fontSize: 30),
+                          "${snapshot.data}",
+                          style: const TextStyle(fontSize: 30),
                         ),
-                        Text(
+                        const Text(
                           "name",
                           style: TextStyle(fontSize: 30),
                         ),
