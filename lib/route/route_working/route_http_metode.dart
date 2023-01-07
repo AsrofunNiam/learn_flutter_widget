@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 import 'package:learn_flutter_widget/view/main_view_working/view_htttp/view_httpget_one.dart';
+import 'package:learn_flutter_widget/view/main_view_working/view_htttp/view_httpget_two.dart';
 
 class RouteHttp extends StatefulWidget {
   const RouteHttp({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class _RouteHttpState extends State<RouteHttp> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const ViewHttp(),
-    const RouteCardTest2(),
+    const ViewHttpGetTwo(),
     const RouteCardTest2(),
   ];
   void _onItemTapped(int index) {
@@ -70,7 +71,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP GET 1',
+                          'GET 1',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -92,7 +93,7 @@ class _RouteHttpState extends State<RouteHttp> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'HTTP POST 2',
+                          'GET 2',
                           style: TextStyle(
                             fontSize: 20,
                           ),
