@@ -1,40 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_card_innkwell/view_card_two.dart';
-import 'package:learn_flutter_widget/view/mainView_Widgets/view_card_innkwell/view_innnkwell_one.dart';
 
-class RouteCardInnkwell extends StatefulWidget {
-  const RouteCardInnkwell({Key? key}) : super(key: key);
+// ignore: must_be_immutable
+class RouteMain extends StatelessWidget {
+  String? testText1;
+  String? testText2;
+  String? testText3;
+  late Function() callOne;
+  late Function() callTwo;
+  late Function() callThree;
+  int selecTextIndex = 0;
 
-  @override
-  State<RouteCardInnkwell> createState() => _RouteCardInnkwellState();
-}
-
-class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
-  late int _selecTextIndex = 0;
-  List viewWidget = [
-    const ViewInnkwellOne(),
-    const ViewCardTwo(),
-    const RouteCardTest2(),
-  ];
-  void _onItemTapped(int index) {
-    _selecTextIndex = index;
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => viewWidget[_selecTextIndex]),
-    );
-  }
+  RouteMain({
+    Key? key,
+    required this.testText1,
+    required this.testText2,
+    required this.testText3,
+    // required this.myList,
+    required this.callOne,
+    required this.callTwo,
+    required this.callThree,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-      child: routeMain(),
-    ));
-  }
+    // void _onItemTapped(int index) {
+    //   // int selecTextIndex = 0;
+    //   selecTextIndex = index;
+    //   Navigator.push(
+    //       context, MaterialPageRoute(builder: (context) =>movePage));
+    // }
 
-  Container routeMain() {
     return Container(
       decoration: BoxDecoration(
           color: Colors.blueAccent,
@@ -43,8 +39,8 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
             width: 2.0,
           ),
           borderRadius: BorderRadius.circular(10.0),
-          gradient: const LinearGradient(
-              colors: [Colors.indigo, Colors.blueAccent]),
+          gradient:
+              const LinearGradient(colors: [Colors.indigo, Colors.blueAccent]),
           boxShadow: [
             BoxShadow(
                 color: gradientGrey2,
@@ -62,7 +58,9 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
         children: <GestureDetector>[
           GestureDetector(
             onTap: () {
-              _onItemTapped(0);
+              // _onItemTapped(1);
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => callOne()));
             },
             child: Container(
               decoration: BoxDecoration(
@@ -71,10 +69,10 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
-                    'inkwell 1',
-                    style: TextStyle(
+                    testText1.toString(),
+                    style: const TextStyle(
                       fontSize: 20,
                     ),
                   ),
@@ -84,7 +82,9 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
           ),
           GestureDetector(
             onTap: () {
-              _onItemTapped(1);
+              // _onItemTapped(2);
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => callTwo()));
             },
             child: Container(
               decoration: BoxDecoration(
@@ -93,10 +93,10 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
-                    'Card 2',
-                    style: TextStyle(
+                    testText2.toString(),
+                    style: const TextStyle(
                       fontSize: 20,
                     ),
                   ),
@@ -106,7 +106,9 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
           ),
           GestureDetector(
             onTap: () {
-              _onItemTapped(2);
+              // _onItemTapped(2);
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => callThree()));
             },
             child: Container(
               decoration: BoxDecoration(
@@ -115,10 +117,10 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
-                    'Card 3',
-                    style: TextStyle(
+                    testText3.toString(),
+                    style: const TextStyle(
                       fontSize: 20,
                     ),
                   ),
@@ -131,3 +133,24 @@ class _RouteCardInnkwellState extends State<RouteCardInnkwell> {
     );
   }
 }
+
+// class CallClassis {
+//   late int _selecTextIndex = 0;
+
+//   List viewWidget = [
+//     const ViewInnkwellOne(),
+//     const ViewCardTwo(),
+//     const RouteCardTest2(),
+//   ];
+
+//   BuildContext get context => null;
+
+// void _onItemTapped(int index) {
+//     _selecTextIndex = index;
+//     Navigator.push(
+//       context,
+//       MaterialPageRoute(builder: (context) => viewWidget[_selecTextIndex]),
+//     );
+//   }
+
+// }
