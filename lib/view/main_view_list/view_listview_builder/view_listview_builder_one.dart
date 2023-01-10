@@ -1,57 +1,48 @@
+import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
 class ViewListViewBuilderOne extends StatelessWidget {
   const ViewListViewBuilderOne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();  // sementara 
-    // return BlocProvider(
-    //   create: (context) => ProductBloc( ),
-    //   child: Scaffold(
-    //       appBar: AppBar(
-    //         title: const Center(child: Text("ListView Builder one")),
-    //       ),
-    //       body: Column(
-    //         children: [
-    //           TextButton(onPressed: () {
-
-    //           }, child: const Text("Add")),
-    //           Expanded(
-    //               child: ListView.builder(
-    //             itemCount: 3,
-    //             itemBuilder: ((context, index) {
-    //               return Text(index.toString());
-    //             }),
-    //           ))
-    //         ],
-    //       )),
-    // );
+    return Scaffold(
+        appBar: AppBar(
+          title: const Center(child: Text("List View Builder one")),
+        ),
+        body: ListView.builder(
+          itemCount: 100,
+          itemBuilder: (context, index) {
+            return CallListTile(
+              imageUrl: 'https://picsum.photos/id/$index/200/300',
+              title: faker.person.name(),
+              subtitle: faker.lorem.sentence(),
+            );
+          },
+        ));
   }
 }
 
-class Product {
-  String? imageUrl;
-  String? name;
-  int? price;
+class CallListTile extends StatelessWidget {
+  final String imageUrl;
+  final String title;
+  final String subtitle;
 
-  Product({this.imageUrl = "", this.name = "", this.price = 0});
-}
+  const CallListTile({
+    Key? key,
+    required this.imageUrl,
+    required this.title,
+    required this.subtitle,
+  }) : super(key: key);
 
-class ProductBloc extends Bloc<int, List<Product>> {
-  ProductBloc(List<Product> initialState) : super(initialState);
-
-  // List<Product> get initialState => [];
-
-  Stream<List<Product>> mapEventToState(int event) async* {
-    // return null;
-    List<Product> products = [];
-    for (int i = 0; i < event; i++);
-    products.add(Product(
-        imageUrl: 'https://picsum.photos/250?image=9',
-        name: "produk 1" + toString(),
-        price: (event + 1) * 5000));
-    yield products;
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: CircleAvatar(
+        backgroundImage: NetworkImage(imageUrl),
+      ),
+      title: Text(title),
+      subtitle: Text(subtitle),
+      trailing: const Text("10,10 pm"),
+    );
   }
 }

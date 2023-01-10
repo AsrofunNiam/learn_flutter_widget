@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ViewFutureBuilderTwo extends StatelessWidget {
-  // const ViewFutureBuilderTwo({Key? key}) : super(key: key);
+  const ViewFutureBuilderTwo({Key? key}) : super(key: key);
 
   Future<Map<String, dynamic>> getData1() async {
     try {
@@ -12,22 +12,23 @@ class ViewFutureBuilderTwo extends StatelessWidget {
           await http.get(Uri.parse('https://reqres.in/api/users/2'));
       if (hasilGet1.statusCode == 200) {
         var data =json.decode(hasilGet1.body)['data'] as Map<String, dynamic>;
-        print(data['first_name']);
-        print("ini : ${json.decode(hasilGet1.body)['data']['id']}");
+        // print(data['first_name']);
+        // print("ini : ${json.decode(hasilGet1.body)['data']['id']}");
         return data;
       } else {
-        print("Error di ${hasilGet1.statusCode}");
+        // print("Error di ${hasilGet1.statusCode}");
         throw (hasilGet1.statusCode);
       }
     } catch (err) {
+      
       rethrow;
     }
   }
 
   getData2() async {
     // http.get(Uri.parse('http://staging.foxlogger.com:9042/mobile/user-data/83705'));
-    var hasilGet2 = await http.get(
-        Uri.parse('http://staging.foxlogger.com:9042/mobile/user-data/83705'));
+    // var hasilGet2 = await http.get(
+    //     Uri.parse('http://staging.foxlogger.com:9042/mobile/user-data/83705'));
     // print(hasilGet.body);
     // print(json.decode(hasilGet.body)['g_user_id']);
     // print(json.decode(hasilGet2.body)['ptv_ctow']);
@@ -52,7 +53,7 @@ class ViewFutureBuilderTwo extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else {
-            print("test : ${snapshot.data!}");
+            // print("test : ${snapshot.data!}");
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

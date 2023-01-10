@@ -11,7 +11,7 @@ class ViewHttp extends StatefulWidget {
 
 class _ViewHttpState extends State<ViewHttp> {
   // PostResult postResult=null;
-  User? user=null;
+  User? user;
 
 
   @override

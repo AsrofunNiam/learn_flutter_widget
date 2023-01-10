@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class data {
+class Data {
   int id;
   int factId;
   String fact;
   String image;
   String reference;
 
-  data(this.id, this.factId, this.fact, this.image, this.reference);
+  Data(this.id, this.factId, this.fact, this.image, this.reference);
 
-  data.fromJson(Map<String, dynamic> json)
+  Data.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         factId = json['fact_id'],
         fact = json['fact'],
