@@ -10,6 +10,9 @@ class RouteCardTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          title: const Center(child: Text("Route Card Test 2")),
+        ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_backdrop.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_basic_appbar.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_button_variant.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_convex_appbar.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_hidable_buttonbar.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_search.dart';
-import 'package:learn_flutter_widget/route/route_appbar/route_silver_appbar.dart';
+import 'package:learn_flutter_widget/model/menus_home/child_Menu.dart';
+import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/route/route_home/route_navigation/route_tabs.dart';
 
 // ignore: must_be_immutable
-class ParentAppBar extends StatelessWidget {
+class ParentNavigation extends StatelessWidget {
   String titleParentMenu;
   IconData iconParentMenu;
   Color colorParentMenu;
 
-  ParentAppBar(
+  ParentNavigation(
       {Key? key,
       required this.titleParentMenu,
       required this.iconParentMenu,
@@ -37,59 +32,75 @@ class ParentAppBar extends StatelessWidget {
       ),
       children: [
         ChildMenu(
-          titleChildMenu: "Basic AppBar",
+          titleChildMenu: "Tabs",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteBasicAppBar();
+            return const RouteTabs();
           },
         ),
         ChildMenu(
-          titleChildMenu: "Button variant",
+          titleChildMenu: "Dialogs",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteButtonVariant();
+            return const RouteCard();
           },
         ),
         ChildMenu(
-          titleChildMenu: "Silver AppBar",
+          titleChildMenu: "Routes",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteSilverAppbar();
+            return const RouteCard();
           },
         ),
         ChildMenu(
-          titleChildMenu: "Search",
+          titleChildMenu: "Navigation Drawer",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteSearch();
+            return const RouteCard();
           },
         ),
         ChildMenu(
-          titleChildMenu: "BackDrop",
+          titleChildMenu: "Button Sheet",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteBackDrop();
+            return const RouteCard();
           },
         ),
         ChildMenu(
-          titleChildMenu: "Convex AppBar",
+          titleChildMenu: "Button TapBar",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteConvexAppBar();
+            return const RouteCard();
           },
         ),
         ChildMenu(
-          titleChildMenu: "Hidable bottom bar",
+          titleChildMenu: "Button NavigationBar",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
           movePage: () {
-            return const RouteHidableButton();
+            return const RouteCard();
+          },
+        ),
+        ChildMenu(
+          titleChildMenu: "Page Selectore",
+          iconChildMenu: Icons.star,
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
+          movePage: () {
+            return const RouteCard();
+          },
+        ),
+        ChildMenu(
+          titleChildMenu: "Draggable Scrollable Sheet",
+          iconChildMenu: Icons.star,
+          colorChildMenu: const Color.fromARGB(255, 94, 104, 247),
+          movePage: () {
+            return const RouteCard();
           },
         ),
       ],
