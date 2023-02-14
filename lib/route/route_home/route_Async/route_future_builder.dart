@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/route/route_main.dart';
-import 'package:learn_flutter_widget/view/mainView_Async/view_future_builder/view_future_builder1.dart';
-import 'package:learn_flutter_widget/view/mainView_Async/view_future_builder/view_futurebuilder_two.dart';
+import 'package:learn_flutter_widget/view/home_view/mainView_Async/view_future_builder/view_future_builder1.dart';
+import 'package:learn_flutter_widget/view/home_view/mainView_Async/view_future_builder/view_futurebuilder_two.dart';
 
 class RouteFutureBuilder extends StatelessWidget {
   const RouteFutureBuilder({Key? key}) : super(key: key);

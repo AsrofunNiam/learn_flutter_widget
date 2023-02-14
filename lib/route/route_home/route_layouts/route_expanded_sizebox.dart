@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_layouts/view_expanded_sizebox/view_expanded_one.dart';
-import 'package:learn_flutter_widget/view/main_view_layouts/view_expanded_sizebox/view_sizebo_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_layouts/view_expanded_sizebox/view_expanded_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_layouts/view_expanded_sizebox/view_sizebo_one.dart';
 
 class RouteExpanded extends StatefulWidget {
   const RouteExpanded({Key? key}) : super(key: key);

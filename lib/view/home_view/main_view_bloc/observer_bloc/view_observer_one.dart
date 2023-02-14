@@ -20,8 +20,14 @@ class LatihanCubit extends Cubit<int> {
   }
 }
 
-class ViewObserverOne extends StatelessWidget {
-  ViewObserverOne({Key? key}) : super(key: key);
+class ViewObserverOne extends StatefulWidget {
+  const ViewObserverOne({Key? key}) : super(key: key);
+
+  @override
+  State<ViewObserverOne> createState() => _ViewObserverOneState();
+}
+
+class _ViewObserverOneState extends State<ViewObserverOne> {
   LatihanCubit myCounter = LatihanCubit();
 
   @override

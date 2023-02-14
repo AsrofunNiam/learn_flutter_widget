@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:learn_flutter_widget/view/main_view_working/view_htttp/data_class.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_working/view_htttp/data_class.dart';
 
 class Services {
   Future<List<CData>> getAllData() async {
