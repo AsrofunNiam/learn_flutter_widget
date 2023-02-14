@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/view/main_view_working/view_htttp/apiservices.dart';
-import 'package:learn_flutter_widget/view/main_view_working/view_htttp/data_class.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_working/view_htttp/apiservices.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_working/view_htttp/data_class.dart';
 
 class ViewHttpGetTwo extends StatefulWidget {
   const ViewHttpGetTwo({Key? key}) : super(key: key);

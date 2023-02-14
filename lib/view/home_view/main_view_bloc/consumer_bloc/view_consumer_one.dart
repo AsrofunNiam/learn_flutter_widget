@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/consumer_bloc/counter_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/consumer_bloc/counter_one.dart';
 
 class ViewConsumerOne extends StatelessWidget {
   const ViewConsumerOne({Key? key}) : super(key: key);

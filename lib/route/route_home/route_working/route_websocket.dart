@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_working/view_web_socket/view_ws_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_working/view_web_socket/view_ws_one.dart';
 
 class RouteWebSocket extends StatefulWidget {
   const RouteWebSocket({Key? key}) : super(key: key);

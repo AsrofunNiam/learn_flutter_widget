@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:sizer/sizer.dart';
+// import 'package:google_fonts/google_fonts.dart';
+// import 'package:sizer/sizer.dart';
 
 //colors
 const Color kPrimaryColor = Color(0xFF345FB4);

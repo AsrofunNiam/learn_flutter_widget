@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/builder_bloc/view_builder_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/consumer_bloc/view_consumer_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/cubit/view_cubit_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/listener_bloc/view_litener_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/observer_bloc/view_observer_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/builder_bloc/view_builder_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/consumer_bloc/view_consumer_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/cubit/view_cubit_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/listener_bloc/view_litener_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/observer_bloc/view_observer_one.dart';
 
 class RouteBloc extends StatefulWidget {
   const RouteBloc({Key? key}) : super(key: key);
@@ -18,8 +18,8 @@ class _RouteBlocState extends State<RouteBloc> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const RouteCardTest2(),
-    ViewCubiteOne(),
-    ViewObserverOne(),
+    const ViewCubiteOne(),
+    const ViewObserverOne(),
     const ViewBuilderOne(),
     const ViewListenerOne(),
     const ViewConsumerOne()

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:bloc/bloc.dart';
+// import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/builder_bloc/counter_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/builder_bloc/counter_one.dart';
 
 class ViewBuilderOne extends StatelessWidget {
   const ViewBuilderOne({Key? key}) : super(key: key);
@@ -19,6 +19,7 @@ class ViewBuilderOne extends StatelessWidget {
             BlocBuilder<CounterCubit, int>(
               bloc: counterCubit,
               builder: (context, state) {
+                // ignore: unnecessary_null_comparison
                 if (state == null) {
                   return const Text('Loading ..',
                       style:TextStyle(fontSize: 30));

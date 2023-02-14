@@ -3,9 +3,9 @@ import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
 import 'package:learn_flutter_widget/view/advance_view/mail_project/layouting/change_profile/change_profile_one.dart';
 import 'package:learn_flutter_widget/view/advance_view/mail_project/layouting/profile_user/profile_user_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/consumer_bloc/view_consumer_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/cubit/view_cubit_one.dart';
-import 'package:learn_flutter_widget/view/main_view_bloc/listener_bloc/view_litener_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/consumer_bloc/view_consumer_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/cubit/view_cubit_one.dart';
+import 'package:learn_flutter_widget/view/home_view/main_view_bloc/listener_bloc/view_litener_one.dart';
 
 class MailLayouting extends StatefulWidget {
   const MailLayouting({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class _MailLayoutingState extends State<MailLayouting> {
   late int _selecTextIndex = 0;
   List viewWidget = [
     const RouteCardTest2(),
-    ViewCubiteOne(),
+    const ViewCubiteOne(),
     const ProfileUserOne(),
     const ChangeProfileOne(),
     const ViewListenerOne(),

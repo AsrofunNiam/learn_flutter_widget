@@ -14,8 +14,14 @@ class LatihanCubit extends Cubit<int> {
   }
 }
 
-class ViewCubiteOne extends StatelessWidget {
-  ViewCubiteOne({Key? key}) : super(key: key);
+class ViewCubiteOne extends StatefulWidget {
+ const ViewCubiteOne({Key? key}) : super(key: key);
+
+  @override
+  State<ViewCubiteOne> createState() => _ViewCubiteOneState();
+}
+
+class _ViewCubiteOneState extends State<ViewCubiteOne> {
   LatihanCubit myCounter = LatihanCubit();
 
   @override
