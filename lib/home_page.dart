@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/home_main.dart';
-import 'package:learn_flutter_widget/route/routeCard.dart';
+import 'package:learn_flutter_widget/navigation_menus/advance_main.dart';
+import 'package:learn_flutter_widget/navigation_menus/home_main.dart';
 import 'package:learn_flutter_widget/route/routeCardTest.dart';
 import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 
@@ -21,7 +21,7 @@ class _HomePAgeState extends State<HomePAge> {
 
   List viewWidget = [
     const HomeMain(),
-    const RouteCard(),
+    const AdvacneMain(),
     const RouteCardTest(),
     const RouteCardTest2(),
     const RouteCardTest2(),
@@ -30,10 +30,6 @@ class _HomePAgeState extends State<HomePAge> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Menu Main"),
-        centerTitle: true,
-      ),
       body: viewWidget[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[

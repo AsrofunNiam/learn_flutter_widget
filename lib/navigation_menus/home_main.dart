@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_widget/model/model_HomePage/parent_animation.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_Async.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_Layouts.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_Lists.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_Navigation.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_Widget.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/parent_working.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_Async.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_Layouts.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_Lists.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_Navigation.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_Widget.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_bloc.dart';
+import 'package:learn_flutter_widget/model/menus_home/parent_working.dart';
 import 'package:learn_flutter_widget/route/routeCard.dart';
-import 'model/model_HomePage/parent_appbar.dart';
+import 'package:learn_flutter_widget/route/route_home/route_mockito/mockito_one.dart';
+import '../model/model_HomePage/parent_appbar.dart';
+import '../model/menus_advance/mail_project.dart';
+import '../model/menus_home/unit_testing.dart';
 
 class HomeMain extends StatefulWidget {
   const HomeMain({Key? key}) : super(key: key);
@@ -20,6 +24,10 @@ class _HomeMainState extends State<HomeMain> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Home Main"),
+        centerTitle: true,
+      ),
       body: SafeArea(
           child: SingleChildScrollView(
               child: Column(
@@ -94,7 +102,7 @@ class _HomeMainState extends State<HomeMain> {
             ),
           ),
           const SizedBox(
-            height: 10,
+            height: 5,
           ),
           Container(
             color: const Color.fromARGB(255, 240, 240, 240),
@@ -135,21 +143,29 @@ class _HomeMainState extends State<HomeMain> {
                     titleParentMenu: "Working",
                     iconParentMenu: Icons.work,
                     colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
+                ParentBloc(
+                    titleParentMenu: "BLOC",
+                    iconParentMenu: Icons.work,
+                    colorParentMenu: const Color.fromARGB(255, 95, 95, 95)),
+                UnitTesting(
+                    titleParentMenu: "Unit Testing",
+                    iconParentMenu: Icons.email,
+                    colorParentMenu: const Color.fromARGB(255, 33, 228, 36)),
               ],
             ),
           ),
           const SizedBox(
-            height: 10,
+            height: 5,
           ),
           Container(
-            height: 300,
-            color: const Color.fromARGB(255, 253, 253, 253),
+            height: 100,
+            color: const Color.fromARGB(255, 190, 182, 182),
             child: GridView.count(
               scrollDirection: Axis.horizontal,
-              crossAxisCount: 2,
+              crossAxisCount: 1,
               mainAxisSpacing: 10,
               crossAxisSpacing: 10,
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(10),
               children: [
                 Container(
                   decoration: BoxDecoration(
@@ -159,23 +175,23 @@ class _HomeMainState extends State<HomeMain> {
                 ),
                 Container(
                   color: const Color.fromARGB(255, 199, 38, 38),
-                  height: 10,
-                  width: 10,
+                  height: 5,
+                  width: 5,
                 ),
                 Container(
                   color: const Color.fromARGB(255, 140, 218, 137),
-                  height: 10,
-                  width: 10,
+                  height: 5,
+                  width: 5,
                 ),
                 Container(
                   color: const Color.fromARGB(255, 185, 27, 27),
-                  height: 10,
-                  width: 10,
+                  height: 5,
+                  width: 5,
                 ),
                 Container(
                   color: const Color.fromARGB(255, 119, 163, 89),
                   height: 100,
-                  width: 10,
+                  width: 5,
                 ),
                 Container(
                   color: const Color.fromARGB(255, 94, 82, 204),
@@ -196,7 +212,7 @@ class _HomeMainState extends State<HomeMain> {
             ),
           ),
           const SizedBox(
-            height: 10,
+            height: 5,
           ),
           Container(
             height: 100,

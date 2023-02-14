@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter_widget/model/model_HomePage/child_Menu.dart';
-import 'package:learn_flutter_widget/route/route_animation_basic/route_hero.dart';
+import 'package:learn_flutter_widget/model/menus_home/child_Menu.dart';
+import 'package:learn_flutter_widget/route/route_home/route_bloc/route_bloc.dart';
+import 'package:learn_flutter_widget/route/route_home/route_working/route_websocket.dart';
 import '../../route/routeCard.dart';
 
 // ignore: must_be_immutable
-class ParentAnimation extends StatelessWidget {
+class ParentBloc extends StatelessWidget {
   String titleParentMenu;
   IconData iconParentMenu;
   Color colorParentMenu;
   // int _selectedIndex = 0;
-  ParentAnimation(
+  ParentBloc(
       {Key? key,
       required this.titleParentMenu,
       required this.iconParentMenu,
@@ -32,39 +33,23 @@ class ParentAnimation extends StatelessWidget {
       ),
       children: [
         ChildMenu(
-          titleChildMenu: "Hero",
+          titleChildMenu: "Bloc Dasar",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return const RouteHero();
+            return const RouteBloc();
           },
         ),
         ChildMenu(
-          titleChildMenu: "Opacity",
+          titleChildMenu: "Bloc Midle",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
-            return const RouteCard();
+            return const RouteWebSocket();
           },
         ),
         ChildMenu(
-          titleChildMenu: "AnimatedIcon",
-          iconChildMenu: Icons.star,
-          colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
-          movePage: () {
-            return const RouteCard();
-          },
-        ),
-        ChildMenu(
-          titleChildMenu: "Animated Container",
-          iconChildMenu: Icons.star,
-          colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
-          movePage: () {
-            return const RouteCard();
-          },
-        ),
-        ChildMenu(
-          titleChildMenu: "Animated Package",
+          titleChildMenu: "Bloc Expert",
           iconChildMenu: Icons.star,
           colorChildMenu: const Color.fromARGB(255, 121, 128, 214),
           movePage: () {
