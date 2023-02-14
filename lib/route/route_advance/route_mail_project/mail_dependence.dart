@@ -1,22 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter_widget/route/routeCardTest2.dart';
 import 'package:learn_flutter_widget/themes/theme.dart';
-import 'package:learn_flutter_widget/view/main_view_list/view_swipeto_dismiss/view_swipetodismiss_one.dart';
+import 'package:learn_flutter_widget/view/main_view_bloc/builder_bloc/view_builder_one.dart';
+import 'package:learn_flutter_widget/view/main_view_bloc/consumer_bloc/view_consumer_one.dart';
+import 'package:learn_flutter_widget/view/main_view_bloc/cubit/view_cubit_one.dart';
+import 'package:learn_flutter_widget/view/main_view_bloc/listener_bloc/view_litener_one.dart';
+import 'package:learn_flutter_widget/view/main_view_bloc/observer_bloc/view_observer_one.dart';
 
-import '../routeCardTest2.dart';
-
-class RouteSwipeDismiss extends StatefulWidget {
-  const RouteSwipeDismiss({Key? key}) : super(key: key);
+class MailDependance extends StatefulWidget {
+  const MailDependance({Key? key}) : super(key: key);
 
   @override
-  State<RouteSwipeDismiss> createState() => _RouteSwipeDismissState();
+  State<MailDependance> createState() => _MailLayoutingState();
 }
 
-class _RouteSwipeDismissState extends State<RouteSwipeDismiss> {
+class _MailLayoutingState extends State<MailDependance> {
   late int _selecTextIndex = 0;
   List viewWidget = [
-    const ViewSwipeDismissOne(),
     const RouteCardTest2(),
-    const RouteCardTest2(),
+    ViewCubiteOne(),
+    ViewObserverOne(),
+    const ViewBuilderOne(),
+    const ViewListenerOne(),
+    const ViewConsumerOne()
   ];
   void _onItemTapped(int index) {
     _selecTextIndex = index;
@@ -30,7 +36,7 @@ class _RouteSwipeDismissState extends State<RouteSwipeDismiss> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Center(child: Text("Route Swipe Dismiss")),
+          title: const Center(child: Text("Telegram_client")),
         ),
         body: Center(
           child: Container(
@@ -71,7 +77,7 @@ class _RouteSwipeDismissState extends State<RouteSwipeDismiss> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'Swipe Dis 1',
+                          'imap-client',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -93,7 +99,7 @@ class _RouteSwipeDismissState extends State<RouteSwipeDismiss> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'Swipe Dis 2',
+                          'Api-Client WhatsApp',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -115,7 +121,7 @@ class _RouteSwipeDismissState extends State<RouteSwipeDismiss> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         Text(
-                          'Swipe Dis 3',
+                          'Profile User',
                           style: TextStyle(
                             fontSize: 20,
                           ),

@@ -10,6 +10,9 @@ class RouteCardTest2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          title: const Center(child: Text("Route Card Test 3")),
+        ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -53,3 +56,13 @@ class RouteCardTest2 extends StatelessWidget {
     );
   }
 }
+
+ Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Center(child: Text("Web Socket")),
+        ),
+        body: Center(
+          child: Container(),
+        ));
+  }
